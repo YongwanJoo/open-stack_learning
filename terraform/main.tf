@@ -108,6 +108,16 @@ resource "oci_core_instance" "openstack_node" {
   }
 }
 
+# 5. Secondary VNIC 부착 (Neutron External Network 용도)
+resource "oci_core_vnic_attachment" "secondary_vnic" {
+  instance_id = oci_core_instance.openstack_node.id
+  create_vnic_details {
+    subnet_id        = oci_core_subnet.public_subnet.id
+    display_name     = "openstack-secondary-vnic"
+    assign_public_ip = false
+  }
+}
+
 # 완료 후 생성된 공인 IP 출력
 output "instance_public_ip" {
   value = oci_core_instance.openstack_node.public_ip
