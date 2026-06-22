@@ -60,6 +60,7 @@
 ### 📖 가이드 및 개념 정리
 * [1. Terraform 초기 설정 및 OCI 인프라 배포](docs/1.%20terratorm%20%EC%84%A4%EC%A0%95.md)
 * [2. Kolla-Ansible 및 OpenStack 핵심 개념 정리](docs/2.%20kolla%20-%20ensible%3F.md)
+* [3. OpenStack 기초 개념 및 아키텍처 이해](docs/3.%20openstack%20%EA%B8%B0%EC%B4%88%20%EA%B0%9C%EB%85%90.md)
 
 ### 🛠 트러블슈팅
 * [Terraform 초기 설정 오류 해결기](problem_solve/terraform%20%EC%B4%88%EA%B8%B0%20%EC%84%A4%EC%A0%95%20%EC%98%A4%EB%A5%98.md)
